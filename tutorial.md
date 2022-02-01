@@ -221,8 +221,8 @@ all possible actions, e.g., `commands-zork1-130.txt`.
 
 ```bash
 cd $PDIR
-wget https://github.com/yinxusen/dqn-zork/blob/master/resources/games/zork1.z5 ./zork1.z5
-wget https://github.com/yinxusen/dqn-zork/blob/master/resources/commands-zork1-minimum.txt ./commands-zork1-minimum.txt
+wget -O zork1.z5 https://github.com/yinxusen/dqn-zork/raw/master/resources/games/zork1.z5
+wget -O commands-zork1-minimum.txt https://raw.githubusercontent.com/yinxusen/dqn-zork/master/resources/commands-zork1-minimum.txt
 
 MODEL_HOME="example-model"
 PRE_CONF_FILE="model_config/dqn-zork-cnn.yaml"
@@ -231,7 +231,7 @@ GAME_PATH="zork1.z5"
 
 ./sbin/run.sh python/deepword/main.py \
     --config-file "$PRE_CONF_FILE" \
-    --model-dir "$MODELHOME" \
+    --model-dir "$MODEL_HOME" \
     --action-file "$ACTION_FILE" \
     "train-dqn" \
     --game-path "$GAME_PATH"
