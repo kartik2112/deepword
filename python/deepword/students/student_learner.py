@@ -10,7 +10,7 @@ from typing import Tuple, List, Union, Any, Optional, Dict, Generator
 
 import numpy as np
 import tensorflow as tf
-from deeptextworld.agents.base_agent import DRRNMemoTeacher
+from deepword.agents.base_agent import DRRNMemoTeacher
 from tensorflow import Session
 from tensorflow.contrib.training import HParams
 from tensorflow.summary import FileWriter

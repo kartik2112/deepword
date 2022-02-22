@@ -1,3 +1,5 @@
+import collections
+import glob
 import random
 import re
 from os import path
@@ -22,6 +24,18 @@ from deepword.tree_memory import TreeMemory
 from deepword.utils import get_hash, core_name2clazz
 from deepword.utils import report_status
 
+class DRRNMemo(collections.namedtuple(
+    "DRRNMemo",
+    ("tid", "sid", "gid", "aid", "token_id", "a_len", "reward", "is_terminal",
+     "action_mask", "next_action_mask"))):
+    pass
+
+
+class DRRNMemoTeacher(collections.namedtuple(
+    "DRRNMemoTeacher",
+    ("tid", "sid", "gid", "aid", "reward", "is_terminal",
+     "action_mask", "next_action_mask", "q_actions"))):
+    pass
 
 class BaseAgent(Logging):
     """
