@@ -1263,9 +1263,12 @@ class GenDQNCore(TFCore):
                 self.model.beam_size_: 1,
                 self.model.use_greedy_: True,
                 self.model.temperature_: 1.})
-        print(s_argmax_q.shape, valid_len)
+        print(s_argmax_q.shape)
+        print(valid_len)
         expected_q = np.zeros_like(rewards)
         print(len(expected_q))
+        print(rewards)
+        print(s_argmax_q)
         for i in range(len(expected_q)):
             expected_q[i] = rewards[i]
             if not dones[i]:
