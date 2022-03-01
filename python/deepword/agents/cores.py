@@ -1274,7 +1274,7 @@ class GenDQNCore(TFCore):
             expected_q[i] = rewards[i]
             if not dones[i]:
                 expected_q[i] += self.hp.gamma * np.mean(
-                    qs_target[i, range(valid_len[i]),
+                    qs_target[i:range(valid_len[i]),
                               s_argmax_q[i, :valid_len[i]]])
 
         return expected_q
