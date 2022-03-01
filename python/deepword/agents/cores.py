@@ -1240,7 +1240,7 @@ class GenDQNCore(TFCore):
         """
         Compute expected q values given post trajectories and post actions
         """
-
+        print("**",len(trajectories), len(dones), len(rewards))
         src, src_len = self.batch_trajectory2input(trajectories)
         target_model, target_sess = self._get_target_model()
         # target network provides the value used as expected q-values
@@ -1263,7 +1263,8 @@ class GenDQNCore(TFCore):
                 self.model.beam_size_: 1,
                 self.model.use_greedy_: True,
                 self.model.temperature_: 1.})
-
+        print(s_argmax_q.shape, valid_len)
+        print(len(expected_q))
         expected_q = np.zeros_like(rewards)
         for i in range(len(expected_q)):
             expected_q[i] = rewards[i]
