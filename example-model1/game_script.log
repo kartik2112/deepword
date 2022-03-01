@@ -1,0 +1,2387 @@
+2022-02-17 10:01:34,992 - train - INFO - load 1 game files
+2022-02-17 10:01:35,026 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+------------hparams---------------
+
+action_file                     commands-zork1-minimum.txt
+action_padding_in_tj            False
+agent_clazz                     ZorkAgent
+always_compute_policy           False
+annealing_eps_t                 2000000
+append_objective_to_tj          False
+batch_size                      32
+cls_val
+cls_val_id
+collect_floor_plan              False
+core_clazz                      DQNCore
+embedding_size                  64
+eos                             </S>
+eos_id                          3
+eval_episode                    2
+final_eps                       0.0001
+game_episode_terminal_t         600
+gamma                           0.7
+glove_trainable                 False
+hidden_state_size               32
+init_eps                        1.0
+learner_clazz
+learning_rate                   1e-05
+lstm_num_layers                 1
+mask_val
+mask_val_id
+max_snapshot_to_keep            10
+model_creator                   CnnDQN
+model_dir                       example-model1
+n_actions                       130
+n_tokens_per_action             10
+num_conv_filters                32
+num_tokens                      1000
+num_turns                       10
+observation_t                   50000
+padding_val                     [PAD]
+padding_val_id                  0
+policy_eps                      0.0
+policy_sampling_temp            1.0
+policy_to_action                EPS
+prob_complete_walkthrough       0.01
+replay_mem                      500000
+save_gap_t                      5000
+sep_val
+sep_val_id
+sos                             <S>
+sos_id                          2
+start_t_ignore_model_t          False
+tokenizer_type                  zork
+total_t                         9223372036854775807
+unk_val                         [UNK]
+unk_val_id                      1
+use_glove_emb                   False
+use_step_wise_reward            True
+vocab_size                      20199
+walkthrough_guided_exploration  False
+
+-----------------------------------
+
+2022-02-17 10:01:35,044 - deepword.agents.zork_agent.ZorkAgent - INFO - try to load from tag: 0
+2022-02-17 10:01:35,045 - deepword.agents.zork_agent.ZorkAgent - INFO - load actions error: 
+[Errno 2] No such file or directory: 'example-model1/actions-0.npz'
+2022-02-17 10:01:35,045 - deepword.agents.zork_agent.ZorkAgent - INFO - load trajectory error: 
+[Errno 2] No such file or directory: 'example-model1/trajectories-0.npz'
+2022-02-17 10:01:35,049 - deepword.agents.zork_agent.ZorkAgent - INFO - load memory error: 
+[Errno 2] No such file or directory: 'example-model1/memo-0.npz'
+2022-02-17 10:01:35,049 - deepword.agents.zork_agent.ZorkAgent - INFO - load floor plan error: 
+[Errno 2] No such file or directory: 'example-model1/floor_plan-0.npz'
+2022-02-17 10:01:35,050 - deepword.agents.zork_agent.ZorkAgent - INFO - load trajectory error: 
+[Errno 2] No such file or directory: 'example-model1/state_text-0.npz'
+2022-02-17 10:01:35,360 - deepword.agents.cores.DQNCore - INFO - create train model on device /device:CPU:0
+2022-02-17 10:01:35,499 - deepword.agents.cores.DQNCore - WARNING - [4m[5m[1m[47m[31mNo checkpoint to load, using untrained model[0m
+2022-02-17 10:01:35,560 - deepword.agents.cores.DQNCore - INFO - create eval model on device /device:CPU:0
+2022-02-17 10:01:35,604 - deepword.agents.cores.DQNCore - WARNING - [4m[5m[1m[47m[31mNo checkpoint to load, using untrained model[0m
+2022-02-17 10:01:35,672 - train - INFO - playing game epoch_no/game_no: 0/0
+2022-02-17 10:01:35,729 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:01:35,729 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:01:36,354 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            600
+in_game_t    600
+action       [4m[31mtake bracelet[0m
+master       [4m[36mYou can't see any bracelet here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:01:36,355 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:01:36,355 - train - INFO - playing game epoch_no/game_no: 1/0
+2022-02-17 10:01:36,408 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:01:36,408 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:01:37,028 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            1200
+in_game_t    600
+action       [4m[31mopen bag[0m
+master       [4m[36mYou can't see any bag here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:01:37,029 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:01:37,029 - train - INFO - playing game epoch_no/game_no: 2/0
+2022-02-17 10:01:37,081 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:01:37,081 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:01:37,697 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            1800
+in_game_t    600
+action       [4m[31mtake bauble[0m
+master       [4m[36mYou can't see any bauble here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:01:37,698 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:01:37,698 - train - INFO - playing game epoch_no/game_no: 3/0
+2022-02-17 10:01:37,748 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:01:37,748 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:01:37,928 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            1977
+in_game_t    177
+action       [4m[31mtake egg[0m
+master       [4m[36mTaken.[0m
+reward       [32m1.00[0m
+is_terminal  False
+
+2022-02-17 10:01:38,371 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            2400
+in_game_t    600
+action       [4m[31mtake painting[0m
+master       [4m[36mYou can't see any painting here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:01:38,371 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             5
+positive scores   5
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:01:38,372 - train - INFO - playing game epoch_no/game_no: 4/0
+2022-02-17 10:01:38,422 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:01:38,423 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:01:39,131 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            3000
+in_game_t    600
+action       [4m[31mdrop pump[0m
+master       [4m[36mYou don't have that![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:01:39,132 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:01:39,132 - train - INFO - playing game epoch_no/game_no: 5/0
+2022-02-17 10:01:39,185 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:01:39,185 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:01:39,506 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            3307
+in_game_t    307
+action       [4m[31mtake egg[0m
+master       [4m[36mTaken. You hear in the distance the chirping of a song bird.[0m
+reward       [32m1.00[0m
+is_terminal  False
+
+2022-02-17 10:01:39,811 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            3600
+in_game_t    600
+action       [4m[31mtake bauble[0m
+master       [4m[36mYou can't see any bauble here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:01:39,812 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             5
+positive scores   5
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:01:39,812 - train - INFO - playing game epoch_no/game_no: 6/0
+2022-02-17 10:01:39,862 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:01:39,862 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:01:40,481 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            4200
+in_game_t    600
+action       [4m[31mdrop screwdriver[0m
+master       [4m[36mYou don't have that![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:01:40,481 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:01:40,482 - train - INFO - playing game epoch_no/game_no: 7/0
+2022-02-17 10:01:40,532 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:01:40,533 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:01:41,142 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            4800
+in_game_t    600
+action       [4m[31mdrop pump[0m
+master       [4m[36mYou don't have that![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:01:41,143 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:01:41,143 - train - INFO - playing game epoch_no/game_no: 8/0
+2022-02-17 10:01:41,193 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:01:41,193 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:01:41,539 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            5140
+in_game_t    340
+action       [4m[31menter house[0m
+master       [4m[36mKitchen You are in the kitchen of the white house. A table seems to have been used recently for the preparation of food. A passage leads to the west and a dark staircase can be seen leading upward. A dark chimney leads down and to the east is a small window which is open. On the table is an elongated brown sack, smelling of hot peppers. A bottle is sitting on the table. The glass bottle contains:   A quantity of water[0m
+reward       [32m1.00[0m
+is_terminal  False
+
+2022-02-17 10:01:41,811 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            5400
+in_game_t    600
+action       [4m[31mread leaflet[0m
+master       [4m[36mYou can't see any leaflet here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:01:41,812 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             10
+positive scores   10
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:01:41,813 - train - INFO - playing game epoch_no/game_no: 9/0
+2022-02-17 10:01:41,863 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:01:41,863 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:01:42,484 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            6000
+in_game_t    600
+action       [4m[31mread book[0m
+master       [4m[36mYou can't see any book here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:01:42,485 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:01:42,485 - train - INFO - playing game epoch_no/game_no: 10/0
+2022-02-17 10:01:42,535 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:01:42,535 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:01:43,149 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            6600
+in_game_t    600
+action       [4m[31mgo down[0m
+master       [4m[36mCanyon Bottom You are beneath the walls of the river canyon which may be climbable here. The lesser part of the runoff of Aragain Falls flows by below. To the north is a narrow path.[0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:01:43,150 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:01:43,150 - train - INFO - playing game epoch_no/game_no: 11/0
+2022-02-17 10:01:43,201 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:01:43,202 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:01:43,817 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            7200
+in_game_t    600
+action       [4m[31mput jewels in case[0m
+master       [4m[36mYou don't have that![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:01:43,818 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:01:43,819 - train - INFO - playing game epoch_no/game_no: 12/0
+2022-02-17 10:01:43,869 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:01:43,870 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:01:44,487 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            7800
+in_game_t    600
+action       [4m[31mecho[0m
+master       [4m[36mecho echo ...[0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:01:44,488 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:01:44,489 - train - INFO - playing game epoch_no/game_no: 13/0
+2022-02-17 10:01:44,540 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:01:44,540 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:01:45,159 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            8400
+in_game_t    600
+action       [4m[31mput painting inside case[0m
+master       [4m[36mYou don't have that![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:01:45,160 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:01:45,160 - train - INFO - playing game epoch_no/game_no: 14/0
+2022-02-17 10:01:45,211 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:01:45,212 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:01:45,829 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            9000
+in_game_t    600
+action       [4m[31mgo east[0m
+master       [4m[36mBehind House[0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:01:45,830 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:01:45,831 - train - INFO - playing game epoch_no/game_no: 15/0
+2022-02-17 10:01:45,884 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:01:45,884 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:01:46,057 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            9165
+in_game_t    165
+action       [4m[31mtake egg[0m
+master       [4m[36mTaken.[0m
+reward       [32m1.00[0m
+is_terminal  False
+
+2022-02-17 10:01:46,422 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            9517
+in_game_t    517
+action       [4m[31menter house[0m
+master       [4m[36mKitchen You are in the kitchen of the white house. A table seems to have been used recently for the preparation of food. A passage leads to the west and a dark staircase can be seen leading upward. A dark chimney leads down and to the east is a small window which is open. On the table is an elongated brown sack, smelling of hot peppers. A bottle is sitting on the table. The glass bottle contains:   A quantity of water[0m
+reward       [32m1.00[0m
+is_terminal  False
+
+2022-02-17 10:01:46,510 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            9600
+in_game_t    600
+action       [4m[31mgo up chimney[0m
+master       [4m[36mYou can't see any chimney here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:01:46,511 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             15
+positive scores   15
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:01:46,511 - train - INFO - playing game epoch_no/game_no: 16/0
+2022-02-17 10:01:46,562 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:01:46,563 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:01:47,173 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            10200
+in_game_t    600
+action       [4m[31mtake trunk[0m
+master       [4m[36mYou can't see any trunk here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:01:47,174 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:01:47,175 - train - INFO - playing game epoch_no/game_no: 17/0
+2022-02-17 10:01:47,226 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:01:47,226 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:01:47,562 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            10527
+in_game_t    327
+action       [4m[31menter house[0m
+master       [4m[36mKitchen You are in the kitchen of the white house. A table seems to have been used recently for the preparation of food. A passage leads to the west and a dark staircase can be seen leading upward. A dark chimney leads down and to the east is a small window which is open. On the table is an elongated brown sack, smelling of hot peppers. A bottle is sitting on the table. The glass bottle contains:   A quantity of water[0m
+reward       [32m1.00[0m
+is_terminal  False
+
+2022-02-17 10:01:47,647 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            10608
+in_game_t    408
+action       [4m[31mgo northeast[0m
+master       [4m[36mOh, no! You have walked into the slavering fangs of a lurking grue!      ****  You have died  ****   Now, let's take a look here... Well, you probably deserve another chance. I can't quite fix you up completely, but you can't have everything.  Forest This is a forest, with trees in all directions. To the east, there appears to be sunlight.[0m
+reward       [31m-1.00[0m
+is_terminal  True
+
+2022-02-17 10:01:47,648 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            408
+score             0
+positive scores   10
+negative scores   -10
+won               False
+lost              True
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:01:47,649 - train - INFO - playing game epoch_no/game_no: 18/0
+2022-02-17 10:01:47,699 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:01:47,700 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:01:48,310 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            11208
+in_game_t    600
+action       [4m[31mput bauble in case[0m
+master       [4m[36mYou don't have that![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:01:48,311 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:01:48,311 - train - INFO - playing game epoch_no/game_no: 19/0
+2022-02-17 10:01:48,364 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:01:48,364 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:01:48,991 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            11808
+in_game_t    600
+action       [4m[31mkill troll with sword[0m
+master       [4m[36mYou don't have that![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:01:48,991 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:01:48,992 - train - INFO - playing game epoch_no/game_no: 20/0
+2022-02-17 10:01:49,044 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:01:49,045 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:01:49,669 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            12408
+in_game_t    600
+action       [4m[31mopen trap door[0m
+master       [4m[36mYou can't see any trap door here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:01:49,670 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:01:49,670 - train - INFO - playing game epoch_no/game_no: 21/0
+2022-02-17 10:01:49,720 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:01:49,720 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:01:50,356 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            13008
+in_game_t    600
+action       [4m[31mtake painting[0m
+master       [4m[36mYou can't see any painting here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:01:50,356 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:01:50,357 - train - INFO - playing game epoch_no/game_no: 22/0
+2022-02-17 10:01:50,411 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:01:50,411 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:01:50,667 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            13240
+in_game_t    232
+action       [4m[31mtake egg[0m
+master       [4m[36mTaken.[0m
+reward       [32m1.00[0m
+is_terminal  False
+
+2022-02-17 10:01:51,068 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            13608
+in_game_t    600
+action       [4m[31mclimb down[0m
+master       [4m[36mWhat do you want to climb down?[0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:01:51,069 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             5
+positive scores   5
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:01:51,069 - train - INFO - playing game epoch_no/game_no: 23/0
+2022-02-17 10:01:51,123 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:01:51,123 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:01:51,448 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            13909
+in_game_t    301
+action       [4m[31mtake egg[0m
+master       [4m[36mTaken. You hear in the distance the chirping of a song bird.[0m
+reward       [32m1.00[0m
+is_terminal  False
+
+2022-02-17 10:01:51,772 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            14208
+in_game_t    600
+action       [4m[31mgo northwest[0m
+master       [4m[36mWest of House There is a small mailbox here.[0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:01:51,773 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             5
+positive scores   5
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:01:51,773 - train - INFO - playing game epoch_no/game_no: 24/0
+2022-02-17 10:01:51,826 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:01:51,826 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:01:52,451 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            14808
+in_game_t    600
+action       [4m[31mput diamond in case[0m
+master       [4m[36mYou don't have that![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:01:52,451 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:01:52,452 - train - INFO - playing game epoch_no/game_no: 25/0
+2022-02-17 10:01:52,504 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:01:52,505 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:01:53,122 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            15408
+in_game_t    600
+action       [4m[31mread book[0m
+master       [4m[36mYou can't see any book here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:01:53,123 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:01:53,123 - train - INFO - playing game epoch_no/game_no: 26/0
+2022-02-17 10:01:53,176 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:01:53,177 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:01:53,801 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            16008
+in_game_t    600
+action       [4m[31mput bar in case[0m
+master       [4m[36mYou don't have that![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:01:53,801 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:01:53,802 - train - INFO - playing game epoch_no/game_no: 27/0
+2022-02-17 10:01:53,852 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:01:53,852 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:01:54,462 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            16608
+in_game_t    600
+action       [4m[31mgo up chimney[0m
+master       [4m[36mYou can't see any chimney here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:01:54,463 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:01:54,463 - train - INFO - playing game epoch_no/game_no: 28/0
+2022-02-17 10:01:54,656 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:01:54,656 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:01:54,787 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            16736
+in_game_t    128
+action       [4m[31menter house[0m
+master       [4m[36mKitchen You are in the kitchen of the white house. A table seems to have been used recently for the preparation of food. A passage leads to the west and a dark staircase can be seen leading upward. A dark chimney leads down and to the east is a small window which is open. On the table is an elongated brown sack, smelling of hot peppers. A bottle is sitting on the table. The glass bottle contains:   A quantity of water[0m
+reward       [32m1.00[0m
+is_terminal  False
+
+2022-02-17 10:01:55,270 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            17208
+in_game_t    600
+action       [4m[31mput emerald in case[0m
+master       [4m[36mYou don't have that![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:01:55,270 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             10
+positive scores   10
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:01:55,271 - train - INFO - playing game epoch_no/game_no: 29/0
+2022-02-17 10:01:55,323 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:01:55,323 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:01:55,944 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            17808
+in_game_t    600
+action       [4m[31mgo up[0m
+master       [4m[36mThe mountains are impassable.[0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:01:55,945 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:01:55,945 - train - INFO - playing game epoch_no/game_no: 30/0
+2022-02-17 10:01:55,998 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:01:55,998 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:01:56,622 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            18408
+in_game_t    600
+action       [4m[31mdrop stiletto[0m
+master       [4m[36mYou don't have that![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:01:56,623 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:01:56,623 - train - INFO - playing game epoch_no/game_no: 31/0
+2022-02-17 10:01:56,674 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:01:56,675 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:01:57,174 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            18895
+in_game_t    487
+action       [4m[31menter house[0m
+master       [4m[36mKitchen You are in the kitchen of the white house. A table seems to have been used recently for the preparation of food. A passage leads to the west and a dark staircase can be seen leading upward. A dark chimney leads down and to the east is a small window which is open. On the table is an elongated brown sack, smelling of hot peppers. A bottle is sitting on the table. The glass bottle contains:   A quantity of water[0m
+reward       [32m1.00[0m
+is_terminal  False
+
+2022-02-17 10:01:57,292 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            19008
+in_game_t    600
+action       [4m[31mtake key[0m
+master       [4m[36mYou can't see any key here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:01:57,293 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             10
+positive scores   10
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:01:57,293 - train - INFO - playing game epoch_no/game_no: 32/0
+2022-02-17 10:01:57,345 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:01:57,345 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:01:57,957 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            19608
+in_game_t    600
+action       [4m[31mopen case[0m
+master       [4m[36mYou can't see any case here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:01:57,958 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:01:57,958 - train - INFO - playing game epoch_no/game_no: 33/0
+2022-02-17 10:01:58,011 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:01:58,011 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:01:58,634 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            20208
+in_game_t    600
+action       [4m[31mopen mailbox[0m
+master       [4m[36mYou can't see any mailbox here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:01:58,635 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:01:58,635 - train - INFO - playing game epoch_no/game_no: 34/0
+2022-02-17 10:01:58,688 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:01:58,688 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:01:59,314 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            20808
+in_game_t    600
+action       [4m[31mput bar in case[0m
+master       [4m[36mYou don't have that![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:01:59,315 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:01:59,315 - train - INFO - playing game epoch_no/game_no: 35/0
+2022-02-17 10:01:59,369 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:01:59,369 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:01:59,952 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            21367
+in_game_t    559
+action       [4m[31mtake egg[0m
+master       [4m[36mTaken. You hear in the distance the chirping of a song bird.[0m
+reward       [32m1.00[0m
+is_terminal  False
+
+2022-02-17 10:01:59,995 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            21408
+in_game_t    600
+action       [4m[31mput bauble in case[0m
+master       [4m[36mYou don't have that![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:01:59,996 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             5
+positive scores   5
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:01:59,996 - train - INFO - playing game epoch_no/game_no: 36/0
+2022-02-17 10:02:00,051 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:00,051 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:00,699 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            22008
+in_game_t    600
+action       [4m[31mtake painting[0m
+master       [4m[36mYou can't see any painting here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:00,700 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:00,701 - train - INFO - playing game epoch_no/game_no: 37/0
+2022-02-17 10:02:00,755 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:00,755 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:01,396 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            22608
+in_game_t    600
+action       [4m[31mtake skull[0m
+master       [4m[36mYou can't see any skull here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:01,397 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:01,397 - train - INFO - playing game epoch_no/game_no: 38/0
+2022-02-17 10:02:01,449 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:01,450 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:02,066 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            23208
+in_game_t    600
+action       [4m[31mput gold in case[0m
+master       [4m[36mYou don't have that![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:02,067 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:02,067 - train - INFO - playing game epoch_no/game_no: 39/0
+2022-02-17 10:02:02,118 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:02,119 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:02,735 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            23808
+in_game_t    600
+action       [4m[31mtake trunk[0m
+master       [4m[36mYou can't see any trunk here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:02,736 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:02,736 - train - INFO - playing game epoch_no/game_no: 40/0
+2022-02-17 10:02:02,786 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:02,787 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:02,917 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            23932
+in_game_t    124
+action       [4m[31mtake egg[0m
+master       [4m[36mTaken.[0m
+reward       [32m1.00[0m
+is_terminal  False
+
+2022-02-17 10:02:03,413 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            24408
+in_game_t    600
+action       [4m[31mtake bell[0m
+master       [4m[36mYou can't see any bell here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:03,414 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             5
+positive scores   5
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:03,414 - train - INFO - playing game epoch_no/game_no: 41/0
+2022-02-17 10:02:03,467 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:03,467 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:04,093 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            25008
+in_game_t    600
+action       [4m[31mopen mailbox[0m
+master       [4m[36mYou can't see any mailbox here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:04,094 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:04,094 - train - INFO - playing game epoch_no/game_no: 42/0
+2022-02-17 10:02:04,145 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:04,145 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:04,759 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            25608
+in_game_t    600
+action       [4m[31mtake coal[0m
+master       [4m[36mYou can't see any coal here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:04,760 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:04,761 - train - INFO - playing game epoch_no/game_no: 43/0
+2022-02-17 10:02:04,813 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:04,813 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:05,128 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            25913
+in_game_t    305
+action       [4m[31mtake egg[0m
+master       [4m[36mTaken.[0m
+reward       [32m1.00[0m
+is_terminal  False
+
+2022-02-17 10:02:05,433 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            26208
+in_game_t    600
+action       [4m[31mgive egg to thief[0m
+master       [4m[36mYou don't have the broken jewel-encrusted egg.[0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:05,434 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             5
+positive scores   5
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:05,435 - train - INFO - playing game epoch_no/game_no: 44/0
+2022-02-17 10:02:05,485 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:05,485 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:06,095 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            26808
+in_game_t    600
+action       [4m[31mtake torch[0m
+master       [4m[36mYou can't see any torch here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:06,096 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:06,097 - train - INFO - playing game epoch_no/game_no: 45/0
+2022-02-17 10:02:06,147 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:06,147 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:06,766 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            27408
+in_game_t    600
+action       [4m[31mput canary in case[0m
+master       [4m[36mYou don't have that![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:06,767 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:06,767 - train - INFO - playing game epoch_no/game_no: 46/0
+2022-02-17 10:02:06,818 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:06,818 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:06,937 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            27523
+in_game_t    115
+action       [4m[31mgo west[0m
+master       [4m[36mKitchen You are in the kitchen of the white house. A table seems to have been used recently for the preparation of food. A passage leads to the west and a dark staircase can be seen leading upward. A dark chimney leads down and to the east is a small window which is open. On the table is an elongated brown sack, smelling of hot peppers. A bottle is sitting on the table. The glass bottle contains:   A quantity of water[0m
+reward       [32m1.00[0m
+is_terminal  False
+
+2022-02-17 10:02:07,440 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            28008
+in_game_t    600
+action       [4m[31mtake skull[0m
+master       [4m[36mYou can't see any skull here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:07,440 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             10
+positive scores   10
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:07,441 - train - INFO - playing game epoch_no/game_no: 47/0
+2022-02-17 10:02:07,491 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:07,491 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:08,106 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            28608
+in_game_t    600
+action       [4m[31mread book[0m
+master       [4m[36mYou can't see any book here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:08,107 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:08,108 - train - INFO - playing game epoch_no/game_no: 48/0
+2022-02-17 10:02:08,160 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:08,160 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:08,790 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            29208
+in_game_t    600
+action       [4m[31mtake painting[0m
+master       [4m[36mYou can't see any painting here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:08,790 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:08,791 - train - INFO - playing game epoch_no/game_no: 49/0
+2022-02-17 10:02:08,842 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:08,843 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:09,462 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            29808
+in_game_t    600
+action       [4m[31mtake painting[0m
+master       [4m[36mYou can't see any painting here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:09,463 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:09,463 - train - INFO - playing game epoch_no/game_no: 50/0
+2022-02-17 10:02:09,516 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:09,516 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:10,130 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            30408
+in_game_t    600
+action       [4m[31mtake chalice[0m
+master       [4m[36mYou can't see any chalice here! You hear in the distance the chirping of a song bird.[0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:10,130 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:10,131 - train - INFO - playing game epoch_no/game_no: 51/0
+2022-02-17 10:02:10,183 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:10,183 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:10,974 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            31008
+in_game_t    600
+action       [4m[31mtake book[0m
+master       [4m[36mYou can't see any book here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:10,975 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:10,975 - train - INFO - playing game epoch_no/game_no: 52/0
+2022-02-17 10:02:11,026 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:11,027 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:11,651 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            31608
+in_game_t    600
+action       [4m[31mdrop book[0m
+master       [4m[36mYou don't have that![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:11,652 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:11,652 - train - INFO - playing game epoch_no/game_no: 53/0
+2022-02-17 10:02:11,705 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:11,705 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:12,322 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            32208
+in_game_t    600
+action       [4m[31mecho[0m
+master       [4m[36mecho echo ...[0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:12,322 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:12,323 - train - INFO - playing game epoch_no/game_no: 54/0
+2022-02-17 10:02:12,373 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:12,373 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:12,989 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            32808
+in_game_t    600
+action       [4m[31mturn bolt with wrench[0m
+master       [4m[36mYou don't have that![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:12,989 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:12,990 - train - INFO - playing game epoch_no/game_no: 55/0
+2022-02-17 10:02:13,042 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:13,042 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:13,664 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            33408
+in_game_t    600
+action       [4m[31mopen coffin[0m
+master       [4m[36mYou can't see any coffin here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:13,664 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:13,665 - train - INFO - playing game epoch_no/game_no: 56/0
+2022-02-17 10:02:13,714 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:13,715 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:14,325 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            34008
+in_game_t    600
+action       [4m[31mdrop shovel[0m
+master       [4m[36mYou don't have that![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:14,326 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:14,326 - train - INFO - playing game epoch_no/game_no: 57/0
+2022-02-17 10:02:14,377 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:14,377 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:14,989 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            34608
+in_game_t    600
+action       [4m[31mtake garlic[0m
+master       [4m[36mYou can't see any garlic here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:14,990 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:14,990 - train - INFO - playing game epoch_no/game_no: 58/0
+2022-02-17 10:02:15,041 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:15,041 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:15,656 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            35208
+in_game_t    600
+action       [4m[31mput diamond in case[0m
+master       [4m[36mYou don't have that![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:15,657 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:15,657 - train - INFO - playing game epoch_no/game_no: 59/0
+2022-02-17 10:02:15,708 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:15,708 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:16,320 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            35808
+in_game_t    600
+action       [4m[31mopen case[0m
+master       [4m[36mYou can't see any case here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:16,321 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:16,322 - train - INFO - playing game epoch_no/game_no: 60/0
+2022-02-17 10:02:16,373 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:16,373 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:16,981 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            36408
+in_game_t    600
+action       [4m[31mopen window[0m
+master       [4m[36mYou can't see any window here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:16,982 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:16,983 - train - INFO - playing game epoch_no/game_no: 61/0
+2022-02-17 10:02:17,034 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:17,034 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:17,648 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            37008
+in_game_t    600
+action       [4m[31mgo inside boat[0m
+master       [4m[36mYou can't see any boat here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:17,649 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:17,649 - train - INFO - playing game epoch_no/game_no: 62/0
+2022-02-17 10:02:17,700 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:17,700 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:17,941 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            37241
+in_game_t    233
+action       [4m[31mtake egg[0m
+master       [4m[36mTaken.[0m
+reward       [32m1.00[0m
+is_terminal  False
+
+2022-02-17 10:02:18,340 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            37608
+in_game_t    600
+action       [4m[31mopen coffin[0m
+master       [4m[36mYou can't see any coffin here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:18,340 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             5
+positive scores   5
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:18,341 - train - INFO - playing game epoch_no/game_no: 63/0
+2022-02-17 10:02:18,395 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:18,395 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:18,612 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            37809
+in_game_t    201
+action       [4m[31mtake egg[0m
+master       [4m[36mTaken.[0m
+reward       [32m1.00[0m
+is_terminal  False
+
+2022-02-17 10:02:19,041 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            38208
+in_game_t    600
+action       [4m[31mread book[0m
+master       [4m[36mYou can't see any book here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:19,042 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             5
+positive scores   5
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:19,042 - train - INFO - playing game epoch_no/game_no: 64/0
+2022-02-17 10:02:19,095 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:19,096 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:19,728 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            38808
+in_game_t    600
+action       [4m[31mgo inside boat[0m
+master       [4m[36mYou can't see any boat here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:19,729 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:19,729 - train - INFO - playing game epoch_no/game_no: 65/0
+2022-02-17 10:02:19,780 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:19,780 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:20,402 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            39408
+in_game_t    600
+action       [4m[31mtake candles[0m
+master       [4m[36mYou can't see any candles here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:20,403 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:20,403 - train - INFO - playing game epoch_no/game_no: 66/0
+2022-02-17 10:02:20,456 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:20,456 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:21,082 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            40008
+in_game_t    600
+action       [4m[31mput coal in machine[0m
+master       [4m[36mYou don't have that![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:21,083 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:21,083 - train - INFO - playing game epoch_no/game_no: 67/0
+2022-02-17 10:02:21,136 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:21,137 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:21,763 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            40608
+in_game_t    600
+action       [4m[31mdrop shovel[0m
+master       [4m[36mYou don't have that![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:21,763 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:21,764 - train - INFO - playing game epoch_no/game_no: 68/0
+2022-02-17 10:02:21,814 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:21,815 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:22,433 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            41208
+in_game_t    600
+action       [4m[31menter house[0m
+master       [4m[36mYou're not at the house.[0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:22,434 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:22,434 - train - INFO - playing game epoch_no/game_no: 69/0
+2022-02-17 10:02:22,485 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:22,486 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:23,103 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            41808
+in_game_t    600
+action       [4m[31mdig sand[0m
+master       [4m[36mWhat do you want to dig the sand with?[0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:23,104 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:23,104 - train - INFO - playing game epoch_no/game_no: 70/0
+2022-02-17 10:02:23,156 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:23,157 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:23,782 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            42408
+in_game_t    600
+action       [4m[31mtake key[0m
+master       [4m[36mYou can't see any key here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:23,783 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:23,783 - train - INFO - playing game epoch_no/game_no: 71/0
+2022-02-17 10:02:23,836 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:23,836 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:24,279 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            42834
+in_game_t    426
+action       [4m[31mtake egg[0m
+master       [4m[36mTaken. You hear in the distance the chirping of a song bird.[0m
+reward       [32m1.00[0m
+is_terminal  False
+
+2022-02-17 10:02:24,463 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            43008
+in_game_t    600
+action       [4m[31mtake wrench[0m
+master       [4m[36mYou can't see any wrench here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:24,464 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             5
+positive scores   5
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:24,464 - train - INFO - playing game epoch_no/game_no: 72/0
+2022-02-17 10:02:24,516 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:24,517 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:25,144 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            43608
+in_game_t    600
+action       [4m[31mopen coffin[0m
+master       [4m[36mYou can't see any coffin here! You hear in the distance the chirping of a song bird.[0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:25,145 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:25,146 - train - INFO - playing game epoch_no/game_no: 73/0
+2022-02-17 10:02:25,196 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:25,196 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:25,813 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            44208
+in_game_t    600
+action       [4m[31mtake garlic[0m
+master       [4m[36mYou can't see any garlic here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:25,813 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:25,814 - train - INFO - playing game epoch_no/game_no: 74/0
+2022-02-17 10:02:25,867 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:25,868 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:26,493 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            44808
+in_game_t    600
+action       [4m[31mclose lid[0m
+master       [4m[36mYou can't see any lid here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:26,494 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:26,495 - train - INFO - playing game epoch_no/game_no: 75/0
+2022-02-17 10:02:26,546 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:26,547 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:27,170 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            45408
+in_game_t    600
+action       [4m[31mclose lid[0m
+master       [4m[36mYou can't see any lid here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:27,171 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:27,172 - train - INFO - playing game epoch_no/game_no: 76/0
+2022-02-17 10:02:27,223 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:27,223 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:27,836 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            46008
+in_game_t    600
+action       [4m[31mring bell[0m
+master       [4m[36mYou can't see any bell here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:27,837 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:27,837 - train - INFO - playing game epoch_no/game_no: 77/0
+2022-02-17 10:02:27,887 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:27,888 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:28,505 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            46608
+in_game_t    600
+action       [4m[31mput diamond in basket[0m
+master       [4m[36mYou don't have that![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:28,506 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:28,506 - train - INFO - playing game epoch_no/game_no: 78/0
+2022-02-17 10:02:28,559 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:28,559 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:29,185 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            47208
+in_game_t    600
+action       [4m[31mdrop garlic[0m
+master       [4m[36mYou don't have that![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:29,186 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:29,187 - train - INFO - playing game epoch_no/game_no: 79/0
+2022-02-17 10:02:29,239 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:29,239 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:29,859 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            47808
+in_game_t    600
+action       [4m[31mput canary in case[0m
+master       [4m[36mYou don't have that![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:29,860 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:29,860 - train - INFO - playing game epoch_no/game_no: 80/0
+2022-02-17 10:02:29,911 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:29,911 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:30,005 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            47898
+in_game_t    90
+action       [4m[31mtake egg[0m
+master       [4m[36mTaken.[0m
+reward       [32m1.00[0m
+is_terminal  False
+
+2022-02-17 10:02:30,712 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            48408
+in_game_t    600
+action       [4m[31mopen buoy[0m
+master       [4m[36mYou can't see any buoy here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:30,713 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             5
+positive scores   5
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:30,713 - train - INFO - playing game epoch_no/game_no: 81/0
+2022-02-17 10:02:30,766 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:30,766 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:31,391 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            49008
+in_game_t    600
+action       [4m[31mtake screwdriver[0m
+master       [4m[36mYou can't see any screwdriver here![0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:31,392 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:31,392 - train - INFO - playing game epoch_no/game_no: 82/0
+2022-02-17 10:02:31,445 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:31,445 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:32,068 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+t            49608
+in_game_t    600
+action       [4m[31mtake all[0m
+master       [4m[36mIt's not clear what you're referring to.[0m
+reward       [31m-0.10[0m
+is_terminal  True
+
+2022-02-17 10:02:32,069 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+training          True
+#steps            600
+score             0
+positive scores   0
+negative scores   0
+won               False
+lost              False
+policy_to_action  EPS
+eps               1.0
+sampling_temp     1.0
+
+2022-02-17 10:02:32,069 - train - INFO - playing game epoch_no/game_no: 83/0
+2022-02-17 10:02:32,122 - deepword.agents.zork_agent.ZorkAgent - INFO - game id: 3081f2e2e9e25323fe3c38d81a77b095
+2022-02-17 10:02:32,122 - deepword.agents.zork_agent.ZorkAgent - INFO - 
+master     [4m[36mWest of House You are standing in an open field west of a white house, with a boarded front door. There is a small mailbox here.  [0m
+max_score  350
+
+2022-02-17 10:02:32,682 - train - ERROR - error: index 130 is out of bounds for axis 1 with size 130
