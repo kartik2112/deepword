@@ -1269,7 +1269,7 @@ class GenDQNCore(TFCore):
         print(len(expected_q))
         print(rewards)
         print(s_argmax_q)
-        print(qs_target)
+        print(qs_target.shape)
         for i in range(len(expected_q)):
             expected_q[i] = rewards[i]
             if not dones[i]:
