@@ -38,7 +38,6 @@ from deepword.utils import flatten
 from deepword.utils import get_hash
 from deepword.utils import model_name2clazz
 
-
 class BaseCore(Logging, ABC):
     """
     Core: used for agents to compute policy.

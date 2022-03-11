@@ -367,7 +367,7 @@ class StudentLearner(Logging):
             self
     ) -> Tuple[Session, Any, Saver, FileWriter, int, Queue]:
         sess, model, saver, train_steps = self._prepare_model(
-            "/device:GPU:0", training=True)
+            "/device:CPU:0", training=True)
 
         # save the very first model to verify weight has been loaded
         if train_steps == 0:
@@ -396,10 +396,10 @@ class StudentLearner(Logging):
             (self.sess, self.model, self.saver, self.sw, self.train_steps,
              self.queue) = self._prepare_training()
 
-        wait_times = 10
+        wait_times = 1
         while wait_times > 0 and self.queue.empty():
             self.info("waiting data ... (retry times: {})".format(wait_times))
-            time.sleep(10)
+            time.sleep(30)
             wait_times -= 1
 
         if self.queue.empty():

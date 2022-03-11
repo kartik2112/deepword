@@ -5,3 +5,5 @@ docsrc/build/
 commands-zork1-minimum.txt
 example-model/
 zork1.z5
+experiments/
+games_data/
